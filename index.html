@@ -20,13 +20,13 @@
     :root { --cream: #faf6f1; --sand: #f0e8df; --charcoal: #ffffff; --rust: #c45c3b; --rust-dim: rgba(196,92,59,0.3); --black: #1a1512; --white: #1a1512; --dim: #c4b8ad; --border: rgba(196,92,59,0.15); }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { background: var(--cream); color: var(--charcoal); font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6; overflow-x: hidden; }
+    body { background: var(--cream); color: #1a1512; font-family: 'Inter', sans-serif; font-weight: 400; line-height: 1.6; overflow-x: hidden; }
     nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 20px 48px; background: rgba(250,246,241,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
     .nav-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 400; letter-spacing: 0.1em; color: var(--white); text-decoration: none; }
     .nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
-    .nav-links a { color: var(--dim); text-decoration: none; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a { color: #c4b8ad; text-decoration: none; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; transition: color 0.2s; }
     .nav-links a:hover, .nav-links a.active { color: var(--white); }
-    .lang-toggle { background: none; border: 1px solid var(--border); color: var(--dim); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 12px; cursor: pointer; transition: all 0.2s; }
+    .lang-toggle { background: none; border: 1px solid var(--border); color: #c4b8ad; font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 12px; cursor: pointer; transition: all 0.2s; }
     .lang-toggle:hover { border-color: var(--rust); color: var(--rust); }
     .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
     .hamburger span { display: block; width: 22px; height: 1px; background: var(--white); margin: 5px 0; transition: all 0.3s; }
@@ -38,11 +38,11 @@
     .fade-up { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
     .fade-up.visible { opacity: 1; transform: translateY(0); }
     footer { background: var(--charcoal); padding: 48px 72px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
-    .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; color: var(--dim); }
+    .footer-logo { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; color: #c4b8ad; }
     .footer-links { display: flex; gap: 24px; }
-    .footer-links a { color: var(--dim); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+    .footer-links a { color: #c4b8ad; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
     .footer-links a:hover { color: var(--white); }
-    .footer-copy { color: var(--dim); font-size: 0.72rem; }
+    .footer-copy { color: #c4b8ad; font-size: 0.72rem; }
     .section-label { font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--rust); margin-bottom: 16px; }
     h2 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
     .btn-rust { display: inline-block; background: var(--rust); color: #000; text-decoration: none; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 16px 40px; transition: opacity 0.2s; }
@@ -58,20 +58,20 @@
     .hero-content { position: relative; z-index: 2; max-width: 700px; }
     .hero-eyebrow { font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust); margin-bottom: 16px; }
     h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 300; line-height: 0.95; letter-spacing: -0.01em; margin-bottom: 20px; }
-    .hero-sub { font-size: 0.92rem; color: var(--dim); letter-spacing: 0.06em; margin-bottom: 40px; max-width: 480px; line-height: 1.7; }
+    .hero-sub { font-size: 0.92rem; color: #c4b8ad; letter-spacing: 0.06em; margin-bottom: 40px; max-width: 480px; line-height: 1.7; }
     .hero-cta { display: inline-block; border: 1px solid var(--rust); color: var(--rust); text-decoration: none; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; padding: 14px 32px; transition: background 0.2s, color 0.2s; }
     .hero-cta:hover { background: var(--rust); color: #000; }
     .social-row { display: flex; gap: 16px; margin-top: 32px; }
-    .social-row a { color: var(--dim); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: color 0.2s; }
+    .social-row a { color: #c4b8ad; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: color 0.2s; }
     .social-row a:hover { color: var(--rust); }
     .about-preview { background: var(--charcoal); padding: 96px 72px; }
     .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; max-width: 1200px; margin: 0 auto; }
-    .about-text p { color: var(--dim); line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem; }
+    .about-text p { color: #c4b8ad; line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem; }
     .about-img { width: 100%; aspect-ratio: 3/4; object-fit: cover; filter: brightness(0.85); transition: filter 0.3s; }
     .about-img:hover { filter: brightness(1); }
     .stats-row { display: flex; gap: 48px; margin-top: 40px; }
     .stat-num { font-family: 'Playfair Display', Georgia, serif; font-size: 2.4rem; font-weight: 300; color: var(--rust); }
-    .stat-label { font-size: 0.7rem; color: var(--dim); letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
+    .stat-label { font-size: 0.7rem; color: #c4b8ad; letter-spacing: 0.1em; text-transform: uppercase; margin-top: 4px; }
     .about-link { display: inline-block; margin-top: 32px; color: var(--rust); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1px solid var(--rust); padding-bottom: 2px; transition: opacity 0.2s; }
     .about-link:hover { opacity: 0.7; }
     .gallery-section { padding: 96px 72px; background: var(--black); }
@@ -82,12 +82,12 @@
     .gallery-cta-wrap { text-align: center; }
     .booking-preview { background: var(--charcoal); padding: 96px 72px; text-align: center; }
     .booking-preview h2 { max-width: 560px; margin: 0 auto 20px; }
-    .booking-preview p { color: var(--dim); max-width: 480px; margin: 0 auto 36px; font-size: 0.95rem; }
+    .booking-preview p { color: #c4b8ad; max-width: 480px; margin: 0 auto 36px; font-size: 0.95rem; }
     .testimonials-preview { padding: 96px 72px; background: var(--black); }
     .testimonials-preview .inner { max-width: 700px; margin: 0 auto; }
     .testimonial-placeholder { border: 1px solid var(--border); padding: 48px; text-align: center; }
-    .testimonial-placeholder p { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-style: italic; color: var(--dim); margin-bottom: 8px; }
-    .testimonial-placeholder small { color: var(--dim); font-size: 0.75rem; letter-spacing: 0.06em; }
+    .testimonial-placeholder p { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-style: italic; color: #e8e0d8; margin-bottom: 8px; }
+    .testimonial-placeholder small { color: #c4b8ad; font-size: 0.75rem; letter-spacing: 0.06em; }
     @media (max-width: 900px) { .hero { padding: 0 24px 60px; } .about-preview, .gallery-section, .booking-preview, .testimonials-preview { padding: 72px 24px; } .about-grid { grid-template-columns: 1fr; gap: 40px; } .gallery-grid { grid-template-columns: repeat(2, 1fr); } .stats-row { gap: 28px; } h1 { font-size: clamp(3rem, 10vw, 6rem); } }
   </style>
 </head>
